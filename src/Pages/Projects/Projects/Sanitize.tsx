@@ -16,18 +16,25 @@ const Sanitize = () => {
           projectName="Sanitize.gg"
           stack={[
             "React",
+            "Redux",
             "TypeScript",
             "Express",
             "Nodejs",
+            "MongoDB",
+            "Passport.js",
             "Redis",
             "EC2",
             "Docker",
             "SageMaker",
             "ECS",
             "Whisper",
+            "GPT-3.5",
             "Oauth2.0",
             "Caddy",
             "Nginx",
+            "Material UI",
+            "Railway",
+            "Git",
           ]}
           websiteUrl={"https://sanitize.up.railway.app"}
         />

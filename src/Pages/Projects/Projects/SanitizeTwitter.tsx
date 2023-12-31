@@ -13,13 +13,15 @@ const SanitizeTwitter = () => {
       name: "Overview",
       section: (
         <Overview
-          projectName="Sanitize.gg"
+          projectName="Sanitize Twitter"
           stack={[
-            "React",
-            "TypeScript",
+            "Python",
+            "Selenium",
+            "Chromium",
             "Express",
             "Nodejs",
             "Redis",
+            "BullMQ",
             "EC2",
             "Docker",
             "SageMaker",
@@ -28,6 +30,8 @@ const SanitizeTwitter = () => {
             "Oauth2.0",
             "Caddy",
             "Nginx",
+            "Railway",
+            "Git",
           ]}
           websiteUrl="https://twitter.com/SanitizeGG"
         />
@@ -53,7 +57,6 @@ const SanitizeTwitter = () => {
 
   return (
     <>
-      {/* <DisplayView laptopView={laptopView} source={"/images/Dashboard.png"} /> */}
       <ProjectDescTemplate
         sections={sections}
         source={ProjectList["Sanitize Twitter"].thumbnail}

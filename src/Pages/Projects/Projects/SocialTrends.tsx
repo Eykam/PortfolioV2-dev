@@ -13,21 +13,21 @@ const SocialTrends = () => {
       name: "Overview",
       section: (
         <Overview
-          projectName="Sanitize.gg"
+          projectName="Social Trends"
           stack={[
+            "Python",
+            "Selenium",
             "React",
-            "TypeScript",
             "Express",
             "Nodejs",
             "Redis",
-            "EC2",
+            "AWS RDS",
+            "SQL",
             "Docker",
-            "SageMaker",
-            "ECS",
-            "Whisper",
-            "Oauth2.0",
-            "Caddy",
             "Nginx",
+            "Linode",
+            "Material UI",
+            "Git",
           ]}
           websiteUrl="https://tinyurl.com/socialtrend"
         />
