@@ -9,6 +9,8 @@ import { ProjectList } from "../../../Store";
 import Stack from "../components/Stack";
 
 const FileDrive = () => {
+  const description = "";
+
   const sections: Sections = {
     Overview: {
       name: "Overview",

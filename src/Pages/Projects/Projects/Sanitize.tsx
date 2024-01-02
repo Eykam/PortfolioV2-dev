@@ -10,7 +10,7 @@ import Stack from "../components/Stack";
 
 const Sanitize = () => {
   const overviewDescription =
-    "Sanitize is a platform designed for video editors who need to carefully monitor and moderate their content, whether it's for social media, streaming platforms, or any other reason. Users upload media and explicit content is automatically filtered.";
+    "Sanitize is a platform designed for video editors who need to carefully monitor and moderate their content, whether it's for social media, streaming platforms, or any other reason. Users upload media and explicit content is automatically filtered using AI.";
 
   const sections: Sections = {
     Overview: {
@@ -34,6 +34,7 @@ const Sanitize = () => {
               "Nodejs",
               "Passport.js",
               "SageMaker",
+              "FFMPEG",
               "Whisper",
               "GPT-3.5",
               "Oauth2.0",

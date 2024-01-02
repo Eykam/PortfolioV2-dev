@@ -9,11 +9,18 @@ import { Sections } from "../components/Sections";
 import Stack from "../components/Stack";
 
 const HomeFilter = () => {
+  const description = `Homefilter.io is a web application built to provide users with a simple and robust way to query SDAT / data about a home located in Maryland. 
+  It was built using a React frontend and AWS backend (API Gateway, LAMBDA, S3, Cloudwatch and Route 53), and served as an introduction to Web Development.`;
+
   const sections: Sections = {
     Overview: {
       name: "Overview",
       section: (
-        <Overview projectName="HomeFilter" websiteUrl="https://Homefilter.io" />
+        <Overview
+          projectName="HomeFilter"
+          websiteUrl="https://Homefilter.io"
+          description={description}
+        />
       ),
     },
     Stack: {

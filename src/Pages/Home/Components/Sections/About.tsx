@@ -132,8 +132,14 @@ const About = () => {
           About Me
         </span>
 
-        <br />
-        <br />
+        {window.innerWidth < 600 ? (
+          <></>
+        ) : (
+          <>
+            <br />
+            <br />
+          </>
+        )}
 
         <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] flex flex-col justify-between">
           <Description />

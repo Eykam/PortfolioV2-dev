@@ -9,6 +9,10 @@ import { ProjectList } from "../../../Store";
 import Stack from "../components/Stack";
 
 const SanitizeTwitter = () => {
+  const description = `A Twitter Bot that translates content to reduce misinformation and break language barriers on Social Media. 
+  Tweets are translated by mentioning @SanitizeGG under posts containing media, and providing a target language.
+  Due to the limitations of Twitter's API (and price), the entire system is built using webscraping.`;
+
   const sections: Sections = {
     Overview: {
       name: "Overview",
@@ -16,6 +20,7 @@ const SanitizeTwitter = () => {
         <Overview
           projectName="Sanitize Twitter"
           websiteUrl="https://twitter.com/SanitizeGG"
+          description={description}
         />
       ),
     },
@@ -24,7 +29,7 @@ const SanitizeTwitter = () => {
       section: (
         <Stack
           stack={{
-            frontend: ["Twitter"],
+            Frontend: ["Twitter"],
             Backend: [
               "Python",
               "Selenium",
@@ -33,6 +38,7 @@ const SanitizeTwitter = () => {
               "Nodejs",
               "EC2",
               "SageMaker",
+              "FFMPEG",
               "Whisper",
               "Oauth2.0",
               "Caddy",

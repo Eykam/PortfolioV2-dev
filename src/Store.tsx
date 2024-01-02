@@ -63,21 +63,21 @@ export const ProjectList: { [index: string]: ProjectType } = {
     url: "Example Url",
     component: SocialTrends,
   },
-  Filedrive: {
-    name: "Filedrive",
-    thumbnail: "/images/vBillboard.png",
-    url: "Example Url",
-    component: FileDrive,
-  },
   "Sanitize Twitter": {
     name: "Sanitize Twitter",
     thumbnail: "/images/SanitizeTwitter.png",
     url: "Example Url",
     component: SanitizeTwitter,
   },
+  Filedrive: {
+    name: "Filedrive",
+    thumbnail: "/images/vBillboard.png",
+    url: "Example Url",
+    component: FileDrive,
+  },
   Portfolio: {
     name: "Portfolio",
-    thumbnail: "/images/Quickdraw.png",
+    thumbnail: "/images/Portfolio.png",
     url: "Example Url",
     component: Portfolio,
   },

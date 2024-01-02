@@ -9,6 +9,9 @@ import { Sections } from "../components/Sections";
 import Stack from "../components/Stack";
 
 const Portfolio = () => {
+  const description = `My personal portfolio, which introducted me to 3D programming on the Web, while showcasing some of my personal projects and interesting details about myself! 
+  The site was built using React, Three.js and GLSL.`;
+
   const sections: Sections = {
     Overview: {
       name: "Overview",
@@ -16,6 +19,8 @@ const Portfolio = () => {
         <Overview
           projectName="Portfolio"
           websiteUrl="https://ekamil.up.railway.app"
+          githubUrl="https://github.com/Eykam/PortfolioV2-dev"
+          description={description}
         />
       ),
     },
@@ -29,6 +34,7 @@ const Portfolio = () => {
               "TypeScript",
               "Material UI",
               "Three.js",
+              "Blender",
               "GLSL",
               "Zustand",
             ],
