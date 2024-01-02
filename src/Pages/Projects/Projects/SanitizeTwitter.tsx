@@ -6,6 +6,7 @@ import ProjectDescTemplate from "../components/ProjectDescTemplate";
 import Overview from "../components/Overview";
 import { Sections } from "../components/Sections";
 import { ProjectList } from "../../../Store";
+import Stack from "../components/Stack";
 
 const SanitizeTwitter = () => {
   const sections: Sections = {
@@ -14,26 +15,32 @@ const SanitizeTwitter = () => {
       section: (
         <Overview
           projectName="Sanitize Twitter"
-          stack={[
-            "Python",
-            "Selenium",
-            "Chromium",
-            "Express",
-            "Nodejs",
-            "Redis",
-            "BullMQ",
-            "EC2",
-            "Docker",
-            "SageMaker",
-            "ECS",
-            "Whisper",
-            "Oauth2.0",
-            "Caddy",
-            "Nginx",
-            "Railway",
-            "Git",
-          ]}
           websiteUrl="https://twitter.com/SanitizeGG"
+        />
+      ),
+    },
+    Stack: {
+      name: "Stack",
+      section: (
+        <Stack
+          stack={{
+            frontend: ["Twitter"],
+            Backend: [
+              "Python",
+              "Selenium",
+              "Chromium",
+              "Express",
+              "Nodejs",
+              "EC2",
+              "SageMaker",
+              "Whisper",
+              "Oauth2.0",
+              "Caddy",
+              "Nginx",
+            ],
+            Database: ["Redis", "BullMQ"],
+            DevOps: ["Docker", "ECS", "Railway", "Git"],
+          }}
         />
       ),
     },

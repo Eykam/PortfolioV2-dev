@@ -6,37 +6,43 @@ import Implementation from "../components/Implementation";
 import Challenges from "../components/Challenges";
 import Conclusion from "../components/Conclusion";
 import { ProjectList } from "../../../Store";
+import Stack from "../components/Stack";
 
 const Sanitize = () => {
+  const overviewDescription =
+    "Sanitize is a platform designed for video editors who need to carefully monitor and moderate their content, whether it's for social media, streaming platforms, or any other reason. Users upload media and explicit content is automatically filtered.";
+
   const sections: Sections = {
     Overview: {
       name: "Overview",
       section: (
         <Overview
           projectName="Sanitize.gg"
-          stack={[
-            "React",
-            "Redux",
-            "TypeScript",
-            "Express",
-            "Nodejs",
-            "MongoDB",
-            "Passport.js",
-            "Redis",
-            "EC2",
-            "Docker",
-            "SageMaker",
-            "ECS",
-            "Whisper",
-            "GPT-3.5",
-            "Oauth2.0",
-            "Caddy",
-            "Nginx",
-            "Material UI",
-            "Railway",
-            "Git",
-          ]}
           websiteUrl={"https://sanitize.up.railway.app"}
+          description={overviewDescription}
+        />
+      ),
+    },
+    Stack: {
+      name: "Stack",
+      section: (
+        <Stack
+          stack={{
+            Frontend: ["React", "Redux", "TypeScript", "Material UI"],
+            Backend: [
+              "Express",
+              "Nodejs",
+              "Passport.js",
+              "SageMaker",
+              "Whisper",
+              "GPT-3.5",
+              "Oauth2.0",
+              "Caddy",
+              "Nginx",
+            ],
+            Database: ["MongoDB", "Redis"],
+            DevOps: ["EC2", "Docker", "ECS", "Railway", "Git"],
+          }}
         />
       ),
     },

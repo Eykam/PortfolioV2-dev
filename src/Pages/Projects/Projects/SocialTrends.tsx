@@ -6,6 +6,7 @@ import ProjectDescTemplate from "../components/ProjectDescTemplate";
 import Overview from "../components/Overview";
 import { Sections } from "../components/Sections";
 import { ProjectList } from "../../../Store";
+import Stack from "../components/Stack";
 
 const SocialTrends = () => {
   const sections: Sections = {
@@ -14,22 +15,20 @@ const SocialTrends = () => {
       section: (
         <Overview
           projectName="Social Trends"
-          stack={[
-            "Python",
-            "Selenium",
-            "React",
-            "Express",
-            "Nodejs",
-            "Redis",
-            "AWS RDS",
-            "SQL",
-            "Docker",
-            "Nginx",
-            "Linode",
-            "Material UI",
-            "Git",
-          ]}
           websiteUrl="https://tinyurl.com/socialtrend"
+        />
+      ),
+    },
+    Stack: {
+      name: "Stack",
+      section: (
+        <Stack
+          stack={{
+            Frontend: ["React", "Material UI"],
+            Backend: ["Python", "Selenium", "Express", "Nodejs", "Nginx"],
+            Database: ["Redis", "AWS RDS", "SQL"],
+            DevOps: ["Docker", "Linode", "Git"],
+          }}
         />
       ),
     },

@@ -6,6 +6,7 @@ import Implementation from "../components/Implementation";
 import Challenges from "../components/Challenges";
 import Conclusion from "../components/Conclusion";
 import { Sections } from "../components/Sections";
+import Stack from "../components/Stack";
 
 const Portfolio = () => {
   const sections: Sections = {
@@ -14,19 +15,26 @@ const Portfolio = () => {
       section: (
         <Overview
           projectName="Portfolio"
-          stack={[
-            "React",
-            "TypeScript",
-            "Material UI",
-            "Three.js",
-            "GLSL",
-            "Zustand",
-            "Node.js",
-            "Express",
-            "Railway",
-            "Git",
-          ]}
           websiteUrl="https://ekamil.up.railway.app"
+        />
+      ),
+    },
+    Stack: {
+      name: "Stack",
+      section: (
+        <Stack
+          stack={{
+            Frontend: [
+              "React",
+              "TypeScript",
+              "Material UI",
+              "Three.js",
+              "GLSL",
+              "Zustand",
+            ],
+            Backend: ["Node.js", "Express"],
+            DevOps: ["Railway", "Git"],
+          }}
         />
       ),
     },

@@ -76,6 +76,14 @@ const Header = () => {
             </MenuItem>
           );
         })}
+
+        <MenuItem
+          onClick={() => {
+            window.open(ListSocials["resume"].link);
+          }}
+        >
+          Resume{" "}
+        </MenuItem>
       </Menu>
 
       <IconButton onClick={handleClick} aria-label="navigation menu">

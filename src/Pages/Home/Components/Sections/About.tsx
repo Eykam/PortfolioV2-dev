@@ -7,14 +7,15 @@ const Description = () => {
   return (
     <div>
       <span className="font-semibold text-sm md:text-xl lg:text-xl text-neutral-400">
-        I'm a Full Stack Developer, and University of Maryland Alumnus,
-        specialized in creating Portable and Scalable systems. My interests
-        include MLOps, DevOps and Web Scraping.
+        I love building the nuts and bolts of web apps – creating sturdy
+        infrastructure and architecture that not only gets the job done but sets
+        the stage for future growth. My passion lies in technology and its
+        ability to solve complex problems, and I love working alongside
+        like-minded individuals who share the same enthusiasm.
         <br />
         <br />
-        I'm a Full Stack Developer, and University of Maryland Alumnus,
-        specialized in creating Portable and Scalable systems. My interests
-        include MLOps, DevOps and Web Scraping
+        Most importantly, I like to build cool things! I'm always working on new
+        projects but some of my other hobbies include skateboarding and music.
       </span>
     </div>
   );

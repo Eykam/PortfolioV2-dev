@@ -6,24 +6,30 @@ import Implementation from "../components/Implementation";
 import Background from "../components/Background";
 import Overview from "../components/Overview";
 import { Sections } from "../components/Sections";
+import Stack from "../components/Stack";
 
 const HomeFilter = () => {
   const sections: Sections = {
     Overview: {
       name: "Overview",
       section: (
-        <Overview
-          projectName="HomeFilter"
-          stack={[
-            "React",
-            "Serverless",
-            "AWS Lambda",
-            "AWS API Gateway",
-            "AWS Route 53",
-            "AWS Amplify",
-            "Git",
-          ]}
-          websiteUrl="https://Homefilter.io"
+        <Overview projectName="HomeFilter" websiteUrl="https://Homefilter.io" />
+      ),
+    },
+    Stack: {
+      name: "Stack",
+      section: (
+        <Stack
+          stack={{
+            Frontend: ["React"],
+            Backend: [
+              "Serverless",
+              "AWS Lambda",
+              "AWS API Gateway",
+              "AWS Route 53",
+            ],
+            DevOps: ["AWS Amplify", "Git"],
+          }}
         />
       ),
     },

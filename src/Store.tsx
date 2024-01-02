@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import ArticleIcon from "@mui/icons-material/Article";
 
 import FileDrive from "./Pages/Projects/Projects/FileDrive";
 import SocialTrends from "./Pages/Projects/Projects/SocialTrends";
@@ -19,6 +20,7 @@ const GITHUB_URL = "https://github.com/Eykam";
 const TWITTER_URL = "https://twitter.com/SanitizeGG";
 // const INSTAGRAM_URL = "https://www.instagram.com/ayecamel/";
 const LINKEDIN_URL = "https://www.linkedin.com/in/eyad-kamil-157713266/";
+const RESUME_URL = "/Resume_09062023.pdf";
 
 export interface MenuIcons {
   link: string;
@@ -26,6 +28,7 @@ export interface MenuIcons {
 }
 
 export const ListSocials: { [index: string]: MenuIcons } = {
+  resume: { link: RESUME_URL, icon: <ArticleIcon className="text-zinc-400" /> },
   github: { link: GITHUB_URL, icon: <GitHubIcon className="text-zinc-400" /> },
   twitter: {
     link: TWITTER_URL,
@@ -68,7 +71,7 @@ export const ProjectList: { [index: string]: ProjectType } = {
   },
   "Sanitize Twitter": {
     name: "Sanitize Twitter",
-    thumbnail: "/images/Dashboard.png",
+    thumbnail: "/images/SanitizeTwitter.png",
     url: "Example Url",
     component: SanitizeTwitter,
   },
