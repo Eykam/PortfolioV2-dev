@@ -69,12 +69,12 @@ export const ProjectList: { [index: string]: ProjectType } = {
     url: "Example Url",
     component: SanitizeTwitter,
   },
-  Filedrive: {
-    name: "Filedrive",
-    thumbnail: "/images/vBillboard.png",
-    url: "Example Url",
-    component: FileDrive,
-  },
+  // Filedrive: {
+  //   name: "Filedrive",
+  //   thumbnail: "/images/vBillboard.png",
+  //   url: "Example Url",
+  //   component: FileDrive,
+  // },
   Portfolio: {
     name: "Portfolio",
     thumbnail: "/images/Portfolio.png",

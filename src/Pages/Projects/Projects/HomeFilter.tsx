@@ -19,6 +19,7 @@ const HomeFilter = () => {
         <Overview
           projectName="HomeFilter"
           websiteUrl="https://Homefilter.io"
+          githubUrl="https://github.com/Eykam/Homefilter"
           description={description}
         />
       ),
@@ -40,22 +41,22 @@ const HomeFilter = () => {
         />
       ),
     },
-    Background: {
-      name: "Overview",
-      section: <Background />,
-    },
-    Implementation: {
-      name: "Overview",
-      section: <Implementation />,
-    },
-    Challenges: {
-      name: "Overview",
-      section: <Challenges />,
-    },
-    Conclusion: {
-      name: "Overview",
-      section: <Conclusion />,
-    },
+    // Background: {
+    //   name: "Overview",
+    //   section: <Background />,
+    // },
+    // Implementation: {
+    //   name: "Overview",
+    //   section: <Implementation />,
+    // },
+    // Challenges: {
+    //   name: "Overview",
+    //   section: <Challenges />,
+    // },
+    // Conclusion: {
+    //   name: "Overview",
+    //   section: <Conclusion />,
+    // },
   };
 
   return (

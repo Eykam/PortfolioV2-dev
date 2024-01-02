@@ -47,7 +47,7 @@ export const Display = ({ source }: { source: string }) => {
   }, [view]);
 
   useFrame(() => {
-    const scrollPercentage = data.range(0, 1 / 5);
+    const scrollPercentage = data.range(0, 1 / 3);
     if (laptop.current) {
       laptop.current.position.y = startingPos + scrollPercentage * 1.25;
     }

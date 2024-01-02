@@ -19,6 +19,7 @@ const Sanitize = () => {
         <Overview
           projectName="Sanitize.gg"
           websiteUrl={"https://sanitize.up.railway.app"}
+          githubUrl="https://github.com/Eykam/sanitize-dev"
           description={overviewDescription}
         />
       ),
@@ -47,22 +48,22 @@ const Sanitize = () => {
         />
       ),
     },
-    Background: {
-      name: "Overview",
-      section: <Background />,
-    },
-    Implementation: {
-      name: "Overview",
-      section: <Implementation />,
-    },
-    Challenges: {
-      name: "Overview",
-      section: <Challenges />,
-    },
-    Conclusion: {
-      name: "Overview",
-      section: <Conclusion />,
-    },
+    // Background: {
+    //   name: "Overview",
+    //   section: <Background />,
+    // },
+    // Implementation: {
+    //   name: "Overview",
+    //   section: <Implementation />,
+    // },
+    // Challenges: {
+    //   name: "Overview",
+    //   section: <Challenges />,
+    // },
+    // Conclusion: {
+    //   name: "Overview",
+    //   section: <Conclusion />,
+    // },
   };
 
   return (

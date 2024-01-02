@@ -74,8 +74,12 @@ const ProjectDescTemplate = ({
 
   return (
     <>
-      <ScrollControls pages={NUM_PAGES} damping={0.1}>
-        <ScrollManager section={section} onSectionChange={setSection} />
+      <ScrollControls pages={NUM_PAGES} damping={0.01}>
+        <ScrollManager
+          section={section}
+          onSectionChange={setSection}
+          numSections={NUM_PAGES}
+        />
 
         <Suspense>
           <Display source={source} />

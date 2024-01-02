@@ -20,6 +20,7 @@ const SanitizeTwitter = () => {
         <Overview
           projectName="Sanitize Twitter"
           websiteUrl="https://twitter.com/SanitizeGG"
+          githubUrl="https://github.com/Eykam/SanitizeTwitter"
           description={description}
         />
       ),
@@ -50,22 +51,22 @@ const SanitizeTwitter = () => {
         />
       ),
     },
-    Background: {
-      name: "Overview",
-      section: <Background />,
-    },
-    Implementation: {
-      name: "Overview",
-      section: <Implementation />,
-    },
-    Challenges: {
-      name: "Overview",
-      section: <Challenges />,
-    },
-    Conclusion: {
-      name: "Overview",
-      section: <Conclusion />,
-    },
+    // Background: {
+    //   name: "Overview",
+    //   section: <Background />,
+    // },
+    // Implementation: {
+    //   name: "Overview",
+    //   section: <Implementation />,
+    // },
+    // Challenges: {
+    //   name: "Overview",
+    //   section: <Challenges />,
+    // },
+    // Conclusion: {
+    //   name: "Overview",
+    //   section: <Conclusion />,
+    // },
   };
 
   return (

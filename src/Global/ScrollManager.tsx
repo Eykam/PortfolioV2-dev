@@ -6,14 +6,15 @@ import { sections } from "../Pages/Home/Components/Sections";
 
 const ScrollManager = (props: {
   section: number;
+  numSections: number;
   onSectionChange: (num: number) => void;
 }) => {
-  const { section, onSectionChange } = props;
+  const { section, numSections, onSectionChange } = props;
 
   const data = useScroll();
   const lastScroll = useRef(0);
   const isAnimating = useRef(false);
-  const NUM_SECTIONS = useMemo(() => Object.keys(sections).length, []);
+  // const NUM_SECTIONS = useMemo(() => Object.keys(sections).length, []);
 
   useEffect(() => {
     data.fill.classList.add("top-0");
@@ -35,7 +36,7 @@ const ScrollManager = (props: {
 
   useFrame(() => {
     const getCurrSection = () => {
-      const section = Math.floor(data.offset * NUM_SECTIONS);
+      const section = Math.floor(data.offset * numSections);
       return section;
     };
 

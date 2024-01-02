@@ -73,8 +73,12 @@ const Home = ({ initialSection }: { initialSection?: number }) => {
 
   return (
     <>
-      <ScrollControls pages={5} damping={0.1}>
-        <ScrollManager section={section} onSectionChange={setSection} />
+      <ScrollControls pages={Object.keys(sections).length} damping={0.1}>
+        <ScrollManager
+          section={section}
+          onSectionChange={setSection}
+          numSections={Object.keys(sections).length}
+        />
 
         <MiniMap visible={visible} />
         <Scroll html>

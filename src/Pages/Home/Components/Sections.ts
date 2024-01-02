@@ -26,10 +26,10 @@ export const sections: Sections = {
     section: Projects,
     name: "Projects",
   },
-  Portal: {
-    section: Portal,
-    name: "Portal",
-  },
+  // Portal: {
+  //   section: Portal,
+  //   name: "Portal",
+  // },
   Contact: {
     section: Contact,
     name: "Contact Me",
