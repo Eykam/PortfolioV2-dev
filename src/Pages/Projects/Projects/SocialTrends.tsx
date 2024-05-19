@@ -20,7 +20,8 @@ const SocialTrends = () => {
       section: (
         <Overview
           projectName="Social Trends"
-          websiteUrl="https://tinyurl.com/socialtrend"
+          websiteUrl="https://socialtrends.up.railway.app/"
+          githubUrl="https://github.com/Eykam/SocialTrends"
           description={description}
         />
       ),

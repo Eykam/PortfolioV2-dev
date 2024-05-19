@@ -13,6 +13,7 @@ import HomeFilter from "./Pages/Projects/Projects/HomeFilter";
 // import Canvas
 
 import { create } from "zustand";
+import LocalLens from "./Pages/Projects/Projects/LocalLens";
 
 // ======================================================================== Social Info ==========================================================================
 
@@ -20,7 +21,7 @@ const GITHUB_URL = "https://github.com/Eykam";
 const TWITTER_URL = "https://twitter.com/SanitizeGG";
 // const INSTAGRAM_URL = "https://www.instagram.com/ayecamel/";
 const LINKEDIN_URL = "https://www.linkedin.com/in/eyad-kamil-157713266/";
-const RESUME_URL = "/Resume_09062023.pdf";
+const RESUME_URL = "/Resume_05192024.pdf";
 
 export interface MenuIcons {
   link: string;
@@ -62,6 +63,12 @@ export const ProjectList: { [index: string]: ProjectType } = {
     thumbnail: "/images/SocialTrends.png",
     url: "Example Url",
     component: SocialTrends,
+  },
+  LocalLens: {
+    name: "LocalLens",
+    thumbnail: "/images/LocalLens.png",
+    url: "Example Url",
+    component: LocalLens,
   },
   "Sanitize Twitter": {
     name: "Sanitize Twitter",

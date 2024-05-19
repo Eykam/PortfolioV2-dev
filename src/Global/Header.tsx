@@ -82,7 +82,7 @@ const Header = () => {
             window.open(ListSocials["resume"].link);
           }}
         >
-          Resume{" "}
+          Resume
         </MenuItem>
       </Menu>
 
