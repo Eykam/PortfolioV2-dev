@@ -21,7 +21,7 @@ const GITHUB_URL = "https://github.com/Eykam";
 const TWITTER_URL = "https://twitter.com/SanitizeGG";
 // const INSTAGRAM_URL = "https://www.instagram.com/ayecamel/";
 const LINKEDIN_URL = "https://www.linkedin.com/in/eyad-kamil-157713266/";
-const RESUME_URL = "/Resume_05192024.pdf";
+const RESUME_URL = "/Resume_09182024.pdf";
 
 export interface MenuIcons {
   link: string;
