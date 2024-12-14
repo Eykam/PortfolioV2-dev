@@ -49,7 +49,7 @@ export const Display = ({ source }: { source: string }) => {
   useFrame(() => {
     const scrollPercentage = data.range(0, 1 / 3);
     if (laptop.current) {
-      laptop.current.position.y = startingPos + scrollPercentage * 1.25;
+      laptop.current.position.y = startingPos + scrollPercentage * 2;
     }
   });
 

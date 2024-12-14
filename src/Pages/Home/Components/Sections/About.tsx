@@ -7,7 +7,7 @@ const Description = () => {
   return (
     <div>
       <span className="font-semibold text-sm md:text-xl lg:text-xl text-neutral-400">
-        I love building the nuts and bolts of web apps – creating sturdy
+        I love learning concepts from first principles – creating sturdy
         infrastructure and architecture that not only gets the job done but sets
         the stage for future growth. My passion lies in technology and its
         ability to solve complex problems, and I love working alongside

@@ -60,16 +60,11 @@ const Landing = () => {
 
           {/* Add Highlighted important words here */}
           <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-2 md:w-1/3">
-            <span className="font-bold text-xl md:text-2xl lg:text-3xl ">
-              Welcome!
-            </span>
-
-            <br />
-
             <span className="font-bold text-sm md:text-xl lg:text-xl text-neutral-400">
               I'm a Full Stack Developer, and University of Maryland Alumnus,
               specialized in creating Portable and Scalable systems. My
-              interests include MLOps, DevOps and Web Scraping
+              interests include Computer Vision, Embedded, Machine Learning and
+              Web Scraping
             </span>
           </div>
         </div>
@@ -91,7 +86,8 @@ const Landing = () => {
             <span className="font-bold text-sm md:text-xl lg:text-xl text-neutral-400">
               I'm a Full Stack Developer, and University of Maryland Alumnus,
               specialized in creating Portable and Scalable systems. My
-              interests include MLOps, DevOps and Web Scraping
+              interests include Computer Vision, Machine Learning and Web
+              Scraping
             </span>
           </div>
 

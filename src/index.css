@@ -40,6 +40,14 @@ html {
   background-color: #646464;
 }
 
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
 .blink_me {
   animation: blinker 3s linear infinite;
 }

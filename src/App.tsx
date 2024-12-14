@@ -9,6 +9,7 @@ import { Grid } from "./Global/Grid";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { routes } from "./routes";
 import { Suspense } from "react";
+import Footer from "./Global/Footer";
 // import MeshGrid from "./Global/MeshGrid";
 
 const RenderRoutes = () => {
@@ -45,6 +46,8 @@ function App() {
             </Suspense>
           </Canvas>
         </Suspense>
+
+        <Footer />
       </div>
     </BrowserRouter>
   );

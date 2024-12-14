@@ -9,6 +9,12 @@ import Sanitize from "./Pages/Projects/Projects/Sanitize";
 import SanitizeTwitter from "./Pages/Projects/Projects/SanitizeTwitter";
 import Portfolio from "./Pages/Projects/Projects/Portfolio";
 import HomeFilter from "./Pages/Projects/Projects/HomeFilter";
+import Scanner from "./Pages/Projects/Projects/3dScanner";
+import Porfolio3D from "./Pages/Projects/Projects/3dPortfolio";
+import DroneStudio from "./Pages/Projects/Projects/DroneStudio";
+import KamilAgency from "./Pages/Projects/Projects/KamilAgency";
+import WorldView from "./Pages/Projects/Projects/WorldView";
+import NYC_Crime from "./Pages/Projects/Projects/NYC-Crime";
 
 // import Canvas
 
@@ -18,10 +24,9 @@ import LocalLens from "./Pages/Projects/Projects/LocalLens";
 // ======================================================================== Social Info ==========================================================================
 
 const GITHUB_URL = "https://github.com/Eykam";
-const TWITTER_URL = "https://twitter.com/SanitizeGG";
-// const INSTAGRAM_URL = "https://www.instagram.com/ayecamel/";
+const TWITTER_URL = "https://twitter.com/AyeCaml";
 const LINKEDIN_URL = "https://www.linkedin.com/in/eyad-kamil-157713266/";
-const RESUME_URL = "/Resume_09182024.pdf";
+const RESUME_URL = "/Resume_12132024.pdf";
 
 export interface MenuIcons {
   link: string;
@@ -35,7 +40,6 @@ export const ListSocials: { [index: string]: MenuIcons } = {
     link: TWITTER_URL,
     icon: <TwitterIcon className="text-zinc-400" />,
   },
-  //   instagram: { link: INSTAGRAM_URL },
   linkedin: {
     link: LINKEDIN_URL,
     icon: <LinkedInIcon className="text-zinc-400" />,
@@ -47,22 +51,52 @@ export const ListSocials: { [index: string]: MenuIcons } = {
 export interface ProjectType {
   name: string;
   thumbnail: string;
-  url: string;
+  url: string | null;
   component: () => JSX.Element;
 }
 
 export const ProjectList: { [index: string]: ProjectType } = {
+  DroneStudio: {
+    name: "DroneStudio",
+    thumbnail: "/images/DroneStudio.png",
+    url: "Example Url",
+    component: DroneStudio,
+  },
+  "3D-Scanner": {
+    name: "3D-Scanner",
+    thumbnail: "/images/3DScanner.png",
+    url: "Example Url",
+    component: Scanner,
+  },
+  // "World View": {
+  //   name: "World-View",
+  //   thumbnail: "/images/WorldView.png",
+  //   url: "Example Url",
+  //   component: WorldView,
+  // },
+  SocialTrends: {
+    name: "SocialTrends",
+    thumbnail: "/images/SocialTrends.png",
+    url: "Example Url",
+    component: SocialTrends,
+  },
   "Sanitize.gg": {
     name: "Sanitize.gg",
     thumbnail: "/images/Sanitize.png",
     url: "Example Url",
     component: Sanitize,
   },
-  SocialTrends: {
-    name: "SocialTrends",
-    thumbnail: "/images/SocialTrends.png",
+  // InsuranceExchange: {
+  //   name: "Sanitize.gg",
+  //   thumbnail: "/images/Sanitize.png",
+  //   url: "Example Url",
+  //   component: Sanitize,
+  // },
+  "3D-Portfolio": {
+    name: "3d-Portfolio",
+    thumbnail: "/images/3D-Portfolio.png",
     url: "Example Url",
-    component: SocialTrends,
+    component: Porfolio3D,
   },
   LocalLens: {
     name: "LocalLens",
@@ -70,8 +104,14 @@ export const ProjectList: { [index: string]: ProjectType } = {
     url: "Example Url",
     component: LocalLens,
   },
+  // "NYC-Crime": {
+  //   name: "NYC-Crime-Tracker",
+  //   thumbnail: "/images/Sanitize.png",
+  //   url: "Example Url",
+  //   component: NYC_Crime,
+  // },
   "Sanitize Twitter": {
-    name: "Sanitize Twitter",
+    name: "Sanitize-Twitter",
     thumbnail: "/images/SanitizeTwitter.png",
     url: "Example Url",
     component: SanitizeTwitter,
@@ -88,6 +128,12 @@ export const ProjectList: { [index: string]: ProjectType } = {
     url: "Example Url",
     component: Portfolio,
   },
+  KamilAgency: {
+    name: "KamilAgency",
+    thumbnail: "/images/KamilAgency.png",
+    url: "Example Url",
+    component: KamilAgency,
+  },
   Homefilter: {
     name: "Homefilter",
     thumbnail: "/images/Homefilter.png",
@@ -99,33 +145,34 @@ export const ProjectList: { [index: string]: ProjectType } = {
 // ======================================================================== SKILLS & INTERESTS ==========================================================================
 
 export const SKILLS = [
+  "C",
+  "Zig",
+  "Rust",
+  "RTOS",
+  "Embedded",
   "Typescript",
   "React",
-  "Nodejs",
+  "Python",
+  "Java",
   "Docker",
   "Redis",
   "PostgreSQL",
   "AWS",
   "MongoDB",
-  "C",
-  "Java",
-  "Python",
   "GCP",
-  "Azure",
-  "Tableau",
-  "R",
-  "RShiny",
+  "Nginx",
+  "Nix",
 ];
 
 export const INTERESTS = [
-  "Skateboarding",
-  "Web Scraping",
-  "ML",
-  "Computer Graphics",
-  "WASM",
-  "WebGL",
+  "Computer Vision",
+  "Embedded",
+  "Machine Learning",
+  "OpenGL",
   "Distributed Computing",
+  "Web Scraping",
   "UI/UX",
+  "Skateboarding",
 ];
 
 // ======================================================================== ZUSTAND STORE ==========================================================================

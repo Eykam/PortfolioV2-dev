@@ -39,7 +39,7 @@ const Overview = ({
             <br />
 
             <div>
-              <span className="font-semibold text-sm md:text-xl lg:text-xl text-neutral-400">
+              <span className="font-semibold  text-neutral-400 text-xs xl:text-lg max-h-1/3 overflow-y-auto">
                 {description}
               </span>
             </div>
@@ -51,13 +51,17 @@ const Overview = ({
                 Links:
               </span>
 
-              <IconButton
-                onClick={() => {
-                  window.open(websiteUrl);
-                }}
-              >
-                <PreviewIcon style={{ color: "gray" }} />
-              </IconButton>
+              {websiteUrl ? (
+                <IconButton
+                  onClick={() => {
+                    window.open(websiteUrl);
+                  }}
+                >
+                  <PreviewIcon style={{ color: "gray" }} />
+                </IconButton>
+              ) : (
+                <></>
+              )}
 
               {githubUrl ? (
                 <IconButton

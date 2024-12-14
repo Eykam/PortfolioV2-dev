@@ -1,4 +1,4 @@
-const Background = () => {
+const Background = ({ description }: { description: JSX.Element }) => {
   return (
     <div className="w-full h-full flex justify-center align-middle">
       <div className="w-3/4 md:w-3/4 lg:w-1/2 flex flex-col justify-center">
@@ -8,15 +8,8 @@ const Background = () => {
 
         <br />
 
-        <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] flex flex-col justify-between">
-          I'm a Full Stack Developer, and University of Maryland Alumnus,
-          specialized in creating Portable and Scalable systems. My interests
-          include MLOps, DevOps and Web Scraping.
-          <br />
-          <br />
-          I'm a Full Stack Developer, and University of Maryland Alumnus,
-          specialized in creating Portable and Scalable systems. My interests
-          include MLOps, DevOps and Web Scraping
+        <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] flex flex-col justify-between text-xs xl:text-lg max-h-2/3 overflow-y-auto">
+          {description}
         </div>
       </div>
     </div>

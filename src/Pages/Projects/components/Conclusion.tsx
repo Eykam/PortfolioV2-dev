@@ -1,6 +1,6 @@
 import Footer from "../../../Global/Footer";
 
-const Conclusion = () => {
+const Conclusion = ({ description }: { description: JSX.Element }) => {
   return (
     <>
       <div className="w-full h-full flex justify-center align-middle">
@@ -11,7 +11,9 @@ const Conclusion = () => {
 
           <br />
 
-          <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] flex flex-col justify-between"></div>
+          <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] flex flex-col justify-between text-xs xl:text-lg max-h-2/3 overflow-y-auto">
+            {description}
+          </div>
         </div>
       </div>
       <Footer />

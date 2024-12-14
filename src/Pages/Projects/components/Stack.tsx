@@ -1,6 +1,5 @@
 import { Chip } from "@mui/material";
 import { motion } from "framer-motion";
-import Footer from "../../../Global/Footer";
 
 const Stack = ({ stack }: { stack: { [index: string]: string[] } }) => {
   return (
@@ -13,7 +12,7 @@ const Stack = ({ stack }: { stack: { [index: string]: string[] } }) => {
 
           <br />
 
-          <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] justify-between">
+          <div className=" bg-neutral-900 bg-opacity-60 rounded-xl p-[5%] justify-between max-h-2/3 overflow-y-auto">
             {Object.keys(stack).map((layer, index) => (
               <>
                 <motion.div
@@ -73,8 +72,6 @@ const Stack = ({ stack }: { stack: { [index: string]: string[] } }) => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
